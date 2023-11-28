@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+
+    <link rel="stylesheet" href="CSS/sidemenu.css">
+
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="stylesheet" href="CSS/grid.css">
+
+    <link rel="stylesheet" href="CSS/ecommerce.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <script src="JS/script.js"></script>
+
+    <script src="JS/load.js">
+       
+    </script>
+
+    <script src="JS/counter.js">
+  
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+    
+    <div class="header-style">
+        <div class="left-section">
+            <img class="images" src="Images/Screenshot 2023-11-21 185617.png" alt="" />
+        </div>
+
+        <div class="middle-section">
+
+
+        </div>
+
+        <div class="right-section">
+            <div style="justify-content: center; padding-left: 130px">
+                <nav>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">More&#9660;
+                            <div class="dropdown-content">
+                                <a href="AboutUs.html">About Us</a>
+                                <a href="ContactMe.html">Contact me</a>
+                                <a href="ReviewUs.html">Review Our Page</a>
+                            </div>
+                    </div>
+
+                    <a href="Cart.html" id="cartnavbar">Cart</a>
+
+                    <div class="extra-features">
+                    </div>
+                    <a href="SignUp_Login.html">Home</a>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Products&#9660;
+                            <div class="dropdown-content">
+                                <a href="Clothes.html">Clothes</a>
+                                <a href="Phones.html">Phones</a>
+                                <a href="Laptops.html">Laptops</a>
+                                <a href="Books.html">Shoes</a>
+                                <a href="Headphones.html">Headphones</a>
+                            </div>
+                    </div>
+                    <a href="index.html">Sign-Out</a>
+
+                </nav>
+            </div>
+
+
+            </button>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="side-menu">
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Clothes">
+                    <img class="Sidemenu-icons" src="Images/tshirt.png" alt="" />
+                    <p class="sidemenu-p">Clothes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Phones">
+                    <img class="Sidemenu-icons" src="Images/smartphone-call.png" alt="" />
+                    <p class="sidemenu-p">Phones</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Laptops">
+                    <img class="Sidemenu-icons" src="Images/laptop.png" alt="" />
+                    <p class="sidemenu-p">Laptops</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Books">
+                    <img class="Sidemenu-icons" src="Images/sneakers.png" alt="" />
+                    <p class="sidemenu-p">Shoes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Headphones">
+                    <img class="Sidemenu-icons" src="Images/headphone-symbol.png" alt="" />
+                    <p class="sidemenu-p">Headphones</p>
+                </button>
+            </div>
+
+        </div>
+    
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/th.jpg" alt="Sony WH-1000XM4">
+            </div>
+            <div class="product-name">
+                <h3>Sony WH-1000XM4</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $349.99</p>
+            </div>
+            <div class="product-buttons" style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Sony WH-1000XM4', 349.99, 'Images/th.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/th (1).jpg" alt="AirPods Pro">
+            </div>
+            <div class="product-name">
+                <h3>AirPods Pro</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $249.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('AirPods Pro', 249.99, 'Images/th (1).jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Add more product divs as needed -->
+    
+        <!-- Product 3 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/th (2).jpg" alt="Bose QuietComfort 35 II">
+            </div>
+            <div class="product-name">
+                <h3>Bose QuietComfort 35 II</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $299.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Bose QuietComfort 35 II', 299.99, 'Images/th (2).jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/20171013194427_Sennheiser-HD-660-S-profileWeb.jpg" alt="Sennheiser HD 660 S">
+            </div>
+            <div class="product-name">
+                <h3>Sennheiser HD 660 S</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $499.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Sennheiser HD 660 S', 499.99, 'Images/20171013194427_Sennheiser-HD-660-S-profileWeb.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 5 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/beats_by_dr_dre_mnen2ll_a_beats_solo3_wireless_on_ear_1280775.jpg" alt="Beats Solo Pro">
+            </div>
+            <div class="product-name">
+                <h3>Beats Solo Pro</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $299.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Beats Solo Pro', 299.99, 'Images/beats_by_dr_dre_mnen2ll_a_beats_solo3_wireless_on_ear_1280775.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 6 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/JBL_FREE_CaseB_Blac_-1605x1605px.webp" alt="JBL Free X">
+            </div>
+            <div class="product-name">
+                <h3>JBL Free X</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $129.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('JBL Free X', 129.99, 'Images/JBL_FREE_CaseB_Blac_-1605x1605px.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 7 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/th (3).jpg" alt="Audio-Technica ATH-M50x">
+            </div>
+            <div class="product-name">
+                <h3>Stealth 400</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $149.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Stealth 400', 149.99, 'Images/th (3).jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        <!-- Product 8 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/th (4).jpg" alt="SteelSeries Arctis Pro">
+            </div>
+            <div class="product-name">
+                <h3>SteelSeries Arctis Pro</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $179.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('SteelSeries Arctis Pro', 179.99, 'Images/th (4).jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+    
+        
+
+    </div>
+
+
+
+    </div>
+
+    <!-- Add more product divs as needed -->
+
+
+
+    <script src="JS/script.js">
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

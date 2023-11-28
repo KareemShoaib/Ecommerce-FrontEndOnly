@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+
+    <link rel="stylesheet" href="CSS/sidemenu.css">
+
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/ecommerce.css">
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+
+    <div class="header-style">
+        <div class="left-section">
+            <img class="images" src="Images/Screenshot 2023-11-21 185617.png" alt="" />
+        </div>
+
+        <div class="middle-section">
+
+
+        </div>
+
+        <div class="right-section">
+            <div style="justify-content: center; padding-left: 130px">
+                <nav>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">More&#9660;
+                            <div class="dropdown-content">
+                                <a href="AboutUs.html">About Us</a>
+                                <a href="ContactMe.html">Contact me</a>
+                                <a href="ReviewUs.html">Review Our Page</a>
+                            </div>
+                    </div>
+
+                    <a href="Cart.html" id="cartnavbar">Cart</a>
+
+                    <div class="extra-features">
+                    </div>
+                    <a href="index.html">Home</a>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Products&#9660;
+                            <div class="dropdown-content">
+                                <a href="Clothes.html">Clothes</a>
+                                <a href="Phones.html">Phones</a>
+                                <a href="Laptops.html">Laptops</a>
+                                <a href="Books.html">Shoes</a>
+                                <a href="Headphones.html">Headphones</a>
+                            </div>
+                    </div>
+                    <a href="index.html">Sign-Out</a>
+
+                </nav>
+            </div>
+
+
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main-grid">
+        <div class="side-menu">
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Clothes">
+                    <img class="Sidemenu-icons" src="Images/tshirt.png" alt="" />
+                    <p class="sidemenu-p">Clothes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Phones">
+                    <img class="Sidemenu-icons" src="Images/smartphone-call.png" alt="" />
+                    <p class="sidemenu-p">Phones</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Laptops">
+                    <img class="Sidemenu-icons" src="Images/laptop.png" alt="" />
+                    <p class="sidemenu-p">Laptops</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Books">
+                    <img class="Sidemenu-icons" src="Images/sneakers.png" alt="" />
+                    <p class="sidemenu-p">Shoes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Headphones">
+                    <img class="Sidemenu-icons" src="Images/headphone-symbol.png" alt="" />
+                    <p class="sidemenu-p">Headphones</p>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/DSCF4085copy (1).webp" alt="Product 1">
+            </div>
+            <div class="product-name">
+                <h3>Dark Denim Jeans</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $19.99</p>
+            </div>
+            <div class="product-buttons" style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Dark Denim Jeans', 19.99, 'Images/DSCF4085copy (1).webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/tgtg_1.webp" alt="Product 2">
+            </div>
+            <h3>Black Denim Jeans</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Black Denim Jeans', 29.99, 'Images/tgtg_1.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/organdynewcollection_23.webp" alt="Product 2">
+            </div>
+            <h3>Grey Denim Jeans</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Gret Denim Jeans', 29.99, 'Images/organdynewcollection_23.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/organdynewcollection_86.webp" alt="Product 2">
+            </div>
+            <h3>Black Jeans</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Black Jeans', 29.99, 'Images/organdynewcollection_86.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/download (3).jpg" alt="Product 2">
+            </div>
+            <h3>Aeropostale Blue Hoodie</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Aeropostale Blue Hoodie', 29.99, 'Images/102.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/images.jpg" alt="Product 2">
+            </div>
+            <h3>Aeropostale Grey Hoodie</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Aeropostale Grey Hoodie', 29.99, 'Images/images.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/Aeropostale_arf_060820_arf__48337.jpg" alt="Product 2">
+            </div>
+            <h3>Aeropostale Black Hoodie</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Aeropostale Black Hoodie', 19.99, 'Images/Aeropostale_arf_060820_arf__48337.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/A1xO4O36vuL._AC_UL600_SR600,600_.jpg" alt="Product 2">
+            </div>
+            <h3>Aeropostale Dark Jacket</h3>
+            <p>Price: $29.99</p>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Aeropostale Dark Jacket', 29.99, 'Images/A1xO4O36vuL._AC_UL600_SR600,600_.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="JS/script.js"></script>
+
+    <script src="JS/load.js">
+       
+    </script>
+
+    <script src="JS/counter.js">
+  
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="CSS/sidemenu.css">
+
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="stylesheet" href="CSS/grid.css">
+
+    <link rel="stylesheet" href="CSS/ecommerce.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+
+    <div class="header-style">
+        <div class="left-section">
+            <img class="images" src="Images/Screenshot 2023-11-21 185617.png" alt="" />
+        </div>
+
+        <div class="middle-section">
+
+
+        </div>
+
+        <div class="right-section">
+            <div style="justify-content: center; padding-left: 130px">
+                <nav>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">More&#9660;
+                            <div class="dropdown-content">
+                                <a href="AboutUs.html">About Us</a>
+                                <a href="ContactMe.html">Contact me</a>
+                                <a href="ReviewUs.html">Review Our Page</a>
+                            </div>
+                    </div>
+
+                    <a href="Cart.html" id="cartnavbar">Cart</a>
+
+                    <div class="extra-features">
+                    </div>
+                    <a href="SignUp_Login.html">Home</a>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Products&#9660;
+                            <div class="dropdown-content">
+                                <a href="Clothes.html">Clothes</a>
+                                <a href="Phones.html">Phones</a>
+                                <a href="Laptops.html">Laptops</a>
+                                <a href="Books.html">Shoes</a>
+                                <a href="Headphones.html">Headphones</a>
+                            </div>
+                    </div>
+                    <a href="index.html">Sign-Out</a>
+
+                </nav>
+            </div>
+
+
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main-grid">
+        <div class="side-menu">
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Clothes">
+                    <img class="Sidemenu-icons" src="Images/tshirt.png" alt="" />
+                    <p class="sidemenu-p">Clothes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Phones">
+                    <img class="Sidemenu-icons" src="Images/smartphone-call.png" alt="" />
+                    <p class="sidemenu-p">Phones</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Laptops">
+                    <img class="Sidemenu-icons" src="Images/laptop.png" alt="" />
+                    <p class="sidemenu-p">Laptops</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Books">
+                    <img class="Sidemenu-icons" src="Images/sneakers.png" alt="" />
+                    <p class="sidemenu-p">Shoes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Headphones">
+                    <img class="Sidemenu-icons" src="Images/headphone-symbol.png" alt="" />
+                    <p class="sidemenu-p">Headphones</p>
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/asuszep.jpg" alt="ASUS ROG Zephyrus G14">
+            </div>
+            <div class="product-name">
+                <h3>ASUS ROG Zephyrus G14</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $1,299.99</p>
+            </div>
+            <div class="product-buttons" style="margin-left: 15px;">
+                <!-- Use the onclick attribute to call the addToCart function -->
+                <button class="ADD" onclick="addToCart('ASUS ROG Zephyrus G14', 1299.99, 'Images/asuszep.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/41kmf3ezws._ac_sl1032__gnrfzip4pgxjha6p.webp" alt="MSI GS66 Stealth" style="margin-top: 40px;">
+            </div>
+            <div class="product-name">
+                <h3>MSI GS66 Stealth</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $1,799.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('MSI GS66 Stealth', 1799.99, 'Images/41kmf3ezws._ac_sl1032__gnrfzip4pgxjha6p.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <!-- Add more product divs as needed -->
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/71nz3cIcFOL.jpg" alt="Acer Predator Helios 300" style="margin-top: 20px;">
+            </div>
+            <div class="product-name">
+                <h3>Acer Predator Helios 300</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $1,199.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Acer Predator Helios 300', 1199.99, 'Images/71nz3cIcFOL.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/alien.jpg" alt="Alienware m17 R4" style="margin-top: 40px;">
+            </div>
+            <div class="product-name">
+                <h3>Alienware m17 R4</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $2,299.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Alienware m17 R4', 2299.99, 'Images/alien.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/download (2).jpg" alt="Razer Blade 15" style="margin-top:20px ;">
+            </div>
+            <div class="product-name">
+                <h3>Razer Blade 15</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $1,899.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Razer Blade 15', 1899.99, 'Images/download (2).jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/2dl0d41_swlisbcrbpnttuf0.webp" alt="Lenovo Legion 5">
+            </div>
+            <div class="product-name">
+                <h3>Lenovo Legion 5</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $999.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Lenovo Legion 5', 999.99, 'Images/2dl0d41_swlisbcrbpnttuf0.webp')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/starmade-15-50-w-numpad-4-zone-oled-shadow-black-nt-h-dcam-non-odd-non-fpr-freedos-core-set-front-copy.png" alt="HP Omen 15" style="margin-top: 20px;">
+            </div>
+            <div class="product-name">
+                <h3>HP Omen 15</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $1,299.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('HP Omen 15', 1299.99, 'Images/starmade-15-50-w-numpad-4-zone-oled-shadow-black-nt-h-dcam-non-odd-non-fpr-freedos-core-set-front-copy.png')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="product-image">
+                <img src="Images/ipg3.jpg" alt="Lenovo IdeaPad">
+            </div>
+            <div class="product-name">
+                <h3>Lenovo IdeaPad</h3>
+            </div>
+            <div class="product-price">
+                <p>Price: $799.99</p>
+            </div>
+            <div style="margin-left: 15px;">
+                <button class="ADD" onclick="addToCart('Lenovo IdeaPad', 799.99, 'Images/ipg3.jpg')">Add to Cart</button>
+                <button class="ADD">Remove</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+<script src="JS/load.js"></script>
+<script src="JS/cart.js"></script>
+<script src="JS/counter.js"></script>
+
+    <script src="JS/script.js">
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

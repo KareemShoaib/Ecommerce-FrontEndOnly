@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+
+    <link rel="stylesheet" href="CSS/sidemenu.css">
+
+    <link rel="stylesheet" href="CSS/header.css" />
+
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/ecommerce.css">
+   
+    <script src="JS/script.js"></script>
+
+    <script src="JS/load.js">
+       
+    </script>
+
+    <script src="JS/counter.js">
+  
+    </script>
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+    <div class="header-style">
+        <div class="left-section">
+            <img class="images" src="Images/Screenshot 2023-11-21 185617.png" alt="" />
+        </div>
+
+        <div class="middle-section">
+
+
+        </div>
+
+        <div class="right-section">
+            <div style="justify-content: center; padding-left: 130px">
+                <nav>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">More&#9660;
+                            <div class="dropdown-content">
+                                <a href="AboutUs.html">About Us</a>
+                                <a href="ContactMe.html">Contact me</a>
+                                <a href="ReviewUs.html">Review Our Page</a>
+                            </div>
+                    </div>
+
+                    <a href="Cart.html" id="cartnavbar">Cart</a>
+
+                    <div class="extra-features">
+                    </div>
+                    <a href="SignUp_Login.html">Home</a>
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Products&#9660;
+                            <div class="dropdown-content">
+                                <a href="Clothes.html">Clothes</a>
+                                <a href="Phones.html">Phones</a>
+                                <a href="Laptops.html">Laptops</a>
+                                <a href="Books.html">Shoes</a>
+                                <a href="Headphones.html">Headphones</a>
+                            </div>
+                    </div>
+                    <a href="index.html">Sign-Out</a>
+
+                </nav>
+            </div>
+
+
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main-grid">
+        <div class="side-menu">
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Clothes">
+                    <img class="Sidemenu-icons" src="Images/tshirt.png" alt="" />
+                    <p class="sidemenu-p">Clothes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Phones">
+                    <img class="Sidemenu-icons" src="Images/smartphone-call.png" alt="" />
+                    <p class="sidemenu-p">Phones</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Laptops">
+                    <img class="Sidemenu-icons" src="Images/laptop.png" alt="" />
+                    <p class="sidemenu-p">Laptops</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Books">
+                    <img class="Sidemenu-icons" src="Images/sneakers.png" alt="" />
+                    <p class="sidemenu-p">Shoes</p>
+                </button>
+            </div>
+            <div>
+                <button class="sidemenu-button" style="height: 72px; width: 74px" id="Headphones">
+                    <img class="Sidemenu-icons" src="Images/headphone-symbol.png" alt="" />
+                    <p class="sidemenu-p">Headphones</p>
+                </button>
+            </div>
+
+        </div>
+
+
+    
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/iphone-xr-blue.jpg" alt="iPhone XR">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone XR</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $699.99</p>
+                </div>
+                <div class="product-buttons" style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone XR', 699.99, 'Images/iphone-xr-blue.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/refurb-iphone-12-pro-blue-2020.jpg" alt="iPhone 12 Pro">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 12 Pro</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $999.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 12 Pro', 999.99, 'Images/refurb-iphone-12-pro-blue-2020.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/download (1).jpg" alt="iPhone SE (2020)">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone SE (2020)</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $399.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone SE (2020)', 399.99, 'Images/download (1).jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/refurb-iphone-13-pro-max-blue-2023.jpg" alt="iPhone 13 Pro Max">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 13 Pro Max</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $1,099.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 13 Pro Max', 1099.99, 'Images/refurb-iphone-13-pro-max-blue-2023.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/ip11_.jpg" alt="iPhone 11">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 11</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $699.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 11', 699.99, 'Images/ip11_.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/ip8.jpg" alt="iPhone 8">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 8</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $449.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 8', 449.99, 'Images/ip8.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+        
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/ip13.jpg" alt="iPhone 13">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 13</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $999.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 13', 999.99, 'Images/ip13.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/ip11pro.jpg" alt="iPhone 11 Pro">
+                </div>
+                <div class="product-name">
+                    <h3>iPhone 11 Pro</h3>
+                </div>
+                <div class="product-price">
+                    <p>Price: $799.99</p>
+                </div>
+                <div style="margin-left: 15px;">
+                    <button class="ADD" onclick="addToCart('iPhone 11 Pro', 799.99, 'Images/ip11pro.jpg')">Add to Cart</button>
+                    <button class="ADD">Remove</button>
+                </div>
+            </div>
+
+        
+
+
+    </div>
+
+
+
+
+<script src="JS/cart.js"></script>
+<script src="JS/load.js"></script>
+    <script src="JS/script.js">
+        
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
