@@ -2,10 +2,8 @@
 
 window.onload = function () {
     loadCartItems();
-    updateTotalPrice(); // Load total price when the page loads
-    updateCartCounter(); // Load cart counter when the page loads
-
-    // Listen for cart counter update messages from other pages
+    updateTotalPrice();
+    updateCartCounter(); 
     window.addEventListener('message', function (event) {
         if (event.data.type === 'cartCounterUpdate') {
             updateCartCounter(event.data.cartCounter);
@@ -33,7 +31,7 @@ function loadCartItems() {
         cartContainer.appendChild(productDiv);
     });
 
-    updateTotalPrice(); // Update total price after loading cart items
+    updateTotalPrice();
 }
 
 function checkout() {
@@ -56,7 +54,6 @@ function removeFromCart(index) {
     cartItems.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(cartItems));
 
-    // Dispatch the custom event when an item is removed from the cart
     window.dispatchEvent(new Event('cartUpdated'));
     window.dispatchEvent(new Event('cartCounterUpdated'));
     loadCartItems();
