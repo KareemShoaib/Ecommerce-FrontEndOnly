@@ -540,12 +540,6 @@ opacity: 0.4;
     display: block;
   }
   
-/* Add this to your existing CSS or styles2.css file */
-
-/* Style for subnav and its content */
-/* Add this to your existing CSS or styles2.css file */
-
-/* Style for subnav and its content */
 .subnav {
   float: left;
   display: block;
@@ -553,7 +547,7 @@ opacity: 0.4;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  position: relative; /* Added position relative for proper positioning */
+  position: relative; 
 }
 
 .subnav:hover {
@@ -566,8 +560,8 @@ opacity: 0.4;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  top: 0%; /* Position it below the subnav */
-  left: 92%; /* Align with the left of the subnav */
+  top: 0%; 
+  left: 92%; 
 }
 
 .subnav-content a {
@@ -580,7 +574,7 @@ opacity: 0.4;
 }
 
 
-/* Display subnav content to the right of AboutUs link only when hovering over AboutUs */
+
 .subnav:hover .subnav-content,
 .subnav-content:hover {
   display: block;
@@ -588,7 +582,7 @@ opacity: 0.4;
 
 
 
-/* Display subnav content next to AboutUs link only when hovering over AboutUs */
+
 .subnav:hover + .subnav-content {
   display: inherit;
 }
@@ -596,16 +590,16 @@ opacity: 0.4;
 .body-game {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the page takes at least the height of the viewport */
+  min-height: 100vh;
   margin: 0;
 }
 
 .game-text {
-  /* Additional styles for the centering */
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure the div takes the full height of its parent */
+  height: 100%;
 }
 
 .game-h{
@@ -623,4 +617,40 @@ opacity: 0.7;
 .button-game:active{
 opacity: 0.4;
 }
+
+#result {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#inputBox {
+  margin-top: 20px;
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+.video-section img {
+  width: 50%;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.video-section video {
+  width: 50%;
+  max-width: 500px;
+}
+
+.about-text {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 

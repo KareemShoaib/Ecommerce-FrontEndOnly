@@ -127,3 +127,13 @@ body {
     font-family: "Segoe UI";
   }
   
+  .foot-page{
+    background-color:rgb(250, 250, 250);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    position:static;
+
+  }

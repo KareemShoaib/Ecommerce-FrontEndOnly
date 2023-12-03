@@ -48,6 +48,61 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 catch(e){}
 
+try{
+   
+    const qAndA = [
+      { question: "What is the capital of France?", answer: "Paris" },
+      { question: "What is the largest planet in our solar system?", answer: "Jupiter" },
+      { question: "How many continents are there?", answer: "7" }
+      
+    ];
+  
+  
+    let currentQuestionIndex = 0;
+  
+ 
+    function displayQuestion() {
+      const questionBox = document.getElementById('questionBox');
+      questionBox.innerText = qAndA[currentQuestionIndex].question;
+    }
+  
+   
+    function checkAnswer() {
+
+      const userAnswerInput = document.getElementById('userAnswer');
+      const userAnswer = userAnswerInput.value.toLowerCase();
+  
+  
+      if (userAnswer === qAndA[currentQuestionIndex].answer.toLowerCase()) {
+        displayResult("Correct! Well done.");
+      } else {
+        displayResult("Sorry, that's not correct. Try again.");
+      }
+  
+      userAnswerInput.value = '';
+  
+   
+      currentQuestionIndex++;
+  
+ 
+      if (currentQuestionIndex < qAndA.length) {
+        displayQuestion();
+      } else {
+        displayResult("Game Over. You've completed all questions!");
+      }
+    }
+  
+
+    function displayResult(message) {
+      document.getElementById('result').innerText = message;
+    }
+  
+    displayQuestion();
+}
+
+catch(e){}
+
+
 
 
 
