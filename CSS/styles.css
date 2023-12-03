@@ -593,5 +593,34 @@ opacity: 0.4;
   display: inherit;
 }
 
+.body-game {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes at least the height of the viewport */
+  margin: 0;
+}
 
+.game-text {
+  /* Additional styles for the centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the div takes the full height of its parent */
+}
+
+.game-h{
+font-size:70px;
+}
+
+.button-game{
+  transition: 0.3s;
+}
+
+.button-game:hover{
+opacity: 0.7;
+
+}
+.button-game:active{
+opacity: 0.4;
+}
 

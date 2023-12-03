@@ -1,4 +1,57 @@
 try{
+document.addEventListener('DOMContentLoaded', function () {
+    var shopWithMeText = document.getElementById('shopWithMe');
+    document.getElementById('decreaseFontSize').addEventListener('click', function () {
+        var currentSize = window.getComputedStyle(shopWithMeText).fontSize;
+        shopWithMeText.style.fontSize = (parseFloat(currentSize) * 0.8) + 'px';
+    });
+
+    
+    document.getElementById('changeColor').addEventListener('click', function () {
+        shopWithMeText.style.color = 'blue'; 
+    });
+
+   
+    document.getElementById('changeFontFamily').addEventListener('click', function () {
+        shopWithMeText.style.fontFamily = 'Arial, sans-serif';
+    });
+
+  
+    document.getElementById('hideText').addEventListener('click', function () {
+        shopWithMeText.style.display = 'none';
+    });
+
+    document.getElementById('appText').addEventListener('click', function () {
+        shopWithMeText.style.display = 'block';
+    })
+
+    
+    document.getElementById('makeBold').addEventListener('click', function () {
+        shopWithMeText.style.fontWeight = 'bold';
+    });
+
+   
+    document.getElementById('makeItalic').addEventListener('click', function () {
+        shopWithMeText.style.fontStyle = 'italic';
+    });
+
+
+    document.getElementById('reset').addEventListener('click', function () {
+        shopWithMeText.style.fontSize = '70px';
+        shopWithMeText.style.color = ''; 
+        shopWithMeText.style.fontFamily = ''; 
+        shopWithMeText.style.display = ''; 
+        shopWithMeText.style.fontWeight = ''; 
+        shopWithMeText.style.fontStyle = ''; 
+    });
+});
+}
+catch(e){}
+
+
+
+
+try{
 document.addEventListener("DOMContentLoaded", function () {
     const queryParams = new URLSearchParams(window.location.search);
     const showLoginForm = queryParams.get("show") === "login";
